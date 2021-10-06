@@ -1,0 +1,14 @@
+C:\Users\MPatton5\source\repos\NumAnalyzer\NumAnalyzer\bin\Debug\netcoreapp3.1\NumAnalyzer.exe
+C:\Users\MPatton5\source\repos\NumAnalyzer\NumAnalyzer\bin\Debug\netcoreapp3.1\NumAnalyzer.deps.json
+C:\Users\MPatton5\source\repos\NumAnalyzer\NumAnalyzer\bin\Debug\netcoreapp3.1\NumAnalyzer.runtimeconfig.json
+C:\Users\MPatton5\source\repos\NumAnalyzer\NumAnalyzer\bin\Debug\netcoreapp3.1\NumAnalyzer.runtimeconfig.dev.json
+C:\Users\MPatton5\source\repos\NumAnalyzer\NumAnalyzer\bin\Debug\netcoreapp3.1\NumAnalyzer.dll
+C:\Users\MPatton5\source\repos\NumAnalyzer\NumAnalyzer\bin\Debug\netcoreapp3.1\NumAnalyzer.pdb
+C:\Users\MPatton5\source\repos\NumAnalyzer\NumAnalyzer\obj\Debug\netcoreapp3.1\NumAnalyzer.csproj.AssemblyReference.cache
+C:\Users\MPatton5\source\repos\NumAnalyzer\NumAnalyzer\obj\Debug\netcoreapp3.1\NumAnalyzer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MPatton5\source\repos\NumAnalyzer\NumAnalyzer\obj\Debug\netcoreapp3.1\NumAnalyzer.AssemblyInfoInputs.cache
+C:\Users\MPatton5\source\repos\NumAnalyzer\NumAnalyzer\obj\Debug\netcoreapp3.1\NumAnalyzer.AssemblyInfo.cs
+C:\Users\MPatton5\source\repos\NumAnalyzer\NumAnalyzer\obj\Debug\netcoreapp3.1\NumAnalyzer.csproj.CoreCompileInputs.cache
+C:\Users\MPatton5\source\repos\NumAnalyzer\NumAnalyzer\obj\Debug\netcoreapp3.1\NumAnalyzer.dll
+C:\Users\MPatton5\source\repos\NumAnalyzer\NumAnalyzer\obj\Debug\netcoreapp3.1\NumAnalyzer.pdb
+C:\Users\MPatton5\source\repos\NumAnalyzer\NumAnalyzer\obj\Debug\netcoreapp3.1\NumAnalyzer.genruntimeconfig.cache
