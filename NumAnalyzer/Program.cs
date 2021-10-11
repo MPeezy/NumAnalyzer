@@ -17,24 +17,33 @@ namespace NumAnalyzer
     {
         static void Main(string[] args)
         {
+
+            Console.WriteLine("Please enter your name: ");
+            Console.WriteLine();
+            string inputName = Console.ReadLine();
+            Console.WriteLine();
+
             bool goAgain = true;
 
             while (goAgain == true)
             {
-
-
-                Console.WriteLine("Please enter your name: ");
-                Console.WriteLine();
-                string inputName = Console.ReadLine();
-                Console.WriteLine();
-
 
                 Console.WriteLine("Hello " + inputName + "! Enter a number between 1 and 100: ");
                 Console.WriteLine();
 
                 int inputNumber = int.Parse(Console.ReadLine());
 
-                if (inputNumber % 2 == 1)
+                if (inputNumber < 1 || inputNumber > 100)
+
+                    {
+                        Console.WriteLine();
+                        Console.WriteLine(inputNumber + " Invalid entry. Please enter a number between 1 and 100 " + inputName + "!");
+                        Console.WriteLine();
+
+                    }
+
+
+                else if (inputNumber % 2 == 1)
                 {
                     Console.WriteLine();
                     Console.WriteLine(inputNumber + " and Odd");
@@ -61,6 +70,15 @@ namespace NumAnalyzer
                 }
 
 
+                else if (inputNumber % 2 == 0 && inputNumber > 60)
+
+                {
+                    Console.WriteLine();
+                    Console.WriteLine(inputNumber + " Even");
+                    Console.WriteLine();
+
+                }
+
                 else if (inputNumber % 2 == 1 && inputNumber > 60)
 
                 {
@@ -70,53 +88,37 @@ namespace NumAnalyzer
 
                 }
 
-                else if (inputNumber < 1)
+                
 
+                bool askAgain = true;
+                while (askAgain == true)
                 {
+
                     Console.WriteLine();
-                    Console.WriteLine(inputNumber + " Invalid entry. Please enter a number between 1 and 100 " + inputName + "!");
-                    Console.WriteLine();
+                    Console.Write("Continue? (y/n): ");
+                    string answer = Console.ReadLine().ToLower();
+
+                    if (answer == "y")
+                    {
+                        askAgain = false;
+                        goAgain = true;
+                    }
+                    else if (answer == "n")
+                    {
+                        askAgain = false;
+                        goAgain = false;
+                        Console.WriteLine("Good Bye!");
+                    }
+                    else
+                    {
+                        Console.WriteLine("I'm sorry I didn't understand that ");
+                        Console.WriteLine("Let's try that again");
+                    }
+
 
                 }
-
-                else if (inputNumber > 100)
-
-                {
-                    Console.WriteLine();
-                    Console.WriteLine(inputNumber + " Invalid entry. Please enter a number between 1 and 100 " + inputName + "!");
-                    Console.WriteLine();
-
-                }
-
-                //*****CANT GET LOOP TO EXECUTE. NEED CLARIFICATION***
-
-                //bool goAgain = true;
-                //while (goAgain == true)
-
-                //{
-                //    Console.WriteLine("Continue? y/n");
-                //    string answer = Console.ReadLine().ToLower();
-
-
-                //    if (answer == "y")
-                //    {
-                //        //askToGoAgain = false;
-                //        goAgain = true;
-                //    }
-                //    else if (answer == "n")
-                //    {
-                //        //askToGoAgain = false;
-                //        goAgain = false;
-                //        Console.WriteLine("Good Bye!");
-
-
-                //    }
-
-
-
-
-                //}
             }
         }
     }
+
 }
