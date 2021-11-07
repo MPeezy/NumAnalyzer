@@ -12,25 +12,29 @@ set and when the condition is found true the instrutions in that code block will
 //Test//
 
 using System;
+using Xunit;
 
 namespace NumAnalyzer
 {
-    class Program
+    public class NumberAnalyzer
     {
-        static void Main(string[] args)
-        {
+        
+        
 
-            Console.WriteLine("Please enter your name: ");
-            Console.WriteLine();
-            string inputName = Console.ReadLine();
-            Console.WriteLine();
+            //Console.WriteLine("Please enter your name: ");
+            //Console.WriteLine();
+            //string inputName = Console.ReadLine();
+            //Console.WriteLine();
 
-            bool goAgain = true;
 
-            while (goAgain == true)
+            //bool goAgain = true;
+
+            //while (goAgain == true)
+            public string GetNumber(string input)
             {
+                
 
-                Console.WriteLine("Hello " + inputName + "! Enter a number between 1 and 100: ");
+                //Console.WriteLine("Hello " + inputName + "! Enter a number between 1 and 100: ");
                 Console.WriteLine();
 
                 int inputNumber = int.Parse(Console.ReadLine());
@@ -38,89 +42,103 @@ namespace NumAnalyzer
                 if (inputNumber < 1 || inputNumber > 100)
 
                     {
-                        Console.WriteLine();
-                        Console.WriteLine(inputNumber + " Invalid entry. Please enter a number between 1 and 100 " + inputName + "!");
-                        Console.WriteLine();
+                    //Console.WriteLine();
+                    //Console.WriteLine(inputNumber + " Invalid entry. Please enter a number between 1 and 100 " + inputName + "!");
+                    //Console.WriteLine();
+                    
+                    
 
                     }
+            return "";
 
 
-                else if (inputNumber % 2 == 1)
+            if (inputNumber % 2 == 1)
                 {
-                    Console.WriteLine();
-                    Console.WriteLine(inputNumber + " and Odd");
-                    Console.WriteLine();
+                    //Console.WriteLine();
+                    //Console.WriteLine(inputNumber + " and Odd");
+                    //Console.WriteLine();
+                    
 
                 }
-                else if (inputNumber % 2 == 0 && inputNumber > 1 && inputNumber < 26)
+            return "Odd";
+
+            if (inputNumber % 2 == 0 && inputNumber > 1 && inputNumber < 26)
 
                 {
-                    Console.WriteLine();
-                    Console.WriteLine(inputNumber + " Even and less than 25");
-                    Console.WriteLine();
+                    //Console.WriteLine();
+                    //Console.WriteLine(inputNumber + " Even and less than 25");
+                    //Console.WriteLine();
+                    
 
                 }
+            return "Even and less than 25";
 
 
-                else if (inputNumber % 2 == 0 && inputNumber > 25 && inputNumber < 61)
+            if (inputNumber % 2 == 0 && inputNumber > 25 && inputNumber < 61)
 
                 {
-                    Console.WriteLine();
-                    Console.WriteLine(inputNumber + " Even");
-                    Console.WriteLine();
+                    //Console.WriteLine();
+                    //Console.WriteLine(inputNumber + " Even");
+                    //Console.WriteLine();
+                    
 
                 }
+            return "Even";
 
 
-                else if (inputNumber % 2 == 0 && inputNumber > 60)
+            if (inputNumber % 2 == 0 && inputNumber > 60)
 
                 {
-                    Console.WriteLine();
-                    Console.WriteLine(inputNumber + " Even");
-                    Console.WriteLine();
+                    //Console.WriteLine();
+                    //Console.WriteLine(inputNumber + " Even");
+                    //Console.WriteLine();
+                    
 
                 }
+            return "Even";
 
-                else if (inputNumber % 2 == 1 && inputNumber > 60)
+            if (inputNumber % 2 == 1 && inputNumber > 60)
 
                 {
-                    Console.WriteLine();
-                    Console.WriteLine(inputNumber + " Odd");
-                    Console.WriteLine();
+                    //Console.WriteLine();
+                    //Console.WriteLine(inputNumber + " Odd");
+                    //Console.WriteLine();
+                    
 
                 }
-
-                
-
-                bool askAgain = true;
-                while (askAgain == true)
-                {
-
-                    Console.WriteLine();
-                    Console.Write("Continue? (y/n): ");
-                    string answer = Console.ReadLine().ToLower();
-
-                    if (answer == "y")
-                    {
-                        askAgain = false;
-                        goAgain = true;
-                    }
-                    else if (answer == "n")
-                    {
-                        askAgain = false;
-                        goAgain = false;
-                        Console.WriteLine("Good Bye!");
-                    }
-                    else
-                    {
-                        Console.WriteLine("I'm sorry I didn't understand that ");
-                        Console.WriteLine("Let's try that again");
-                    }
+            return "Odd";
 
 
-                }
-            }
+
+            //bool askAgain = true;
+            //while (askAgain == true)
+            //{
+
+            //    Console.WriteLine();
+            //    Console.Write("Continue? (y/n): ");
+            //    string answer = Console.ReadLine().ToLower();
+
+            //    if (answer == "y")
+            //    {
+            //        askAgain = false;
+            //        goAgain = true;
+            //    }
+            //    else if (answer == "n")
+            //    {
+            //        askAgain = false;
+            //        goAgain = false;
+            //        Console.WriteLine("Good Bye!");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("I'm sorry I didn't understand that ");
+            //        Console.WriteLine("Let's try that again");
+            //    }
+
+
+            //}
         }
+        
     }
 
 }
